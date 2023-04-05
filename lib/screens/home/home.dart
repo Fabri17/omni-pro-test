@@ -83,13 +83,18 @@ class _HomeState extends State<Home> {
                   if (photosProvider.error.isNotEmpty)
                     Container(
                       margin: const EdgeInsets.only(top: 5),
-                      child: Text(
-                        photosProvider.error,
-                        style: GoogleFonts.poppins(
-                          textStyle: const TextStyle(
-                            color: Colors.red,
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
+                      child: GestureDetector(
+                        onTap: () => photosProvider.loadMorePhotos(),
+                        child: Text(
+                          "${photosProvider.error} presione para reintentar",
+                          style: GoogleFonts.poppins(
+                            textStyle: const TextStyle(
+                              color: Colors.red,
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                              decoration: TextDecoration.underline,
+                              decorationColor: Colors.red,
+                            ),
                           ),
                         ),
                       ),

@@ -23,6 +23,7 @@ class PhotosProvider with ChangeNotifier {
       if (_isLoading) return;
 
       _isLoading = true;
+
       notifyListeners();
 
       final List<Photo> newPhotos = await _photosService.getPhotos(
