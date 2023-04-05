@@ -9,7 +9,7 @@ Se requiere una aplicación Flutter que use el paquete http para recuperar datos
 
 Clonar el proyecto
 ```bash
-  https://github.com/Fabri17/omni-pro-test.git
+  git clone https://github.com/Fabri17/omni-pro-test.git
 ```
 
 Ir al directorio del proyecto
@@ -21,13 +21,13 @@ Ir al directorio del proyecto
 Instala las dependencias
 
 ```bash
-  Flutter pub get
+  flutter pub get
 ```
     
 Corre la aplicación
 
 ```bash
-  Flutter run
+  flutter run
 ```
     
 ## Ejecución de pruebas
